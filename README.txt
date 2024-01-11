@@ -56,7 +56,7 @@ scipy			1.7.3
 ### HOW TO RUN ###
 
 ## FBA ##
-First, download all files in a single folder. Open the Notebook Net_Zero_C1_FBA. In the second cell, select the desired version of the JSON model (either with or without enzyme coupling for PHB production). Run all consequent cells without modifying anything. The target product can be set in the cell "Set objective product": comment/uncomment the lines belonging to each of the four different products. Substrate influx can be modified in the following cell.
+First, download all files in a single folder. Open the Notebook Net_Zero_C1_FBA. In the second cell, select the desired version of the JSON model (either with or without enzyme coupling for PHB production). Run all consequent cells without modifying anything (xhange only the definition of the pathway for PHB with or without coupling; lines to be commented/uncommented are explicitely signaled in the code). The target product can be set in the cell "Set objective product": comment/uncomment the lines belonging to each of the four different products. Substrate influx can be modified in the following cell.
 
 Simulations can be run by running the cell "Run simulation and control CO2 exchange". Inside this cell, the bounds for the exchange of CO2 can be modified; also desired knockouts can be introduced. The simulations are run using parsimonius FBA (pFBA), which optimizes the objective and minimizes the total sum of fluxes necessary. By using pFBA instead of normal FBA, we can obtain the minimum sugar to methanol ratio necessary to optimize product formation without CO2 emmisions. Once the simulation finish, a Dataframe including all fluxes for all reactions and pathway combinations will be displayed.
 
